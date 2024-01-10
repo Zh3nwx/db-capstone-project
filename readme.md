@@ -1,12 +1,55 @@
-This is the documentation of my final project for the META Database Engineering Course.
+# META Database Engineering Course
+ This is the documentation of my final project
 
-<details><Summary>What I learned in this project</Summary>
-For this final project we were instructed to create a function database for Little Lemon, fictional restaurant, to demonstrate our skills in the following:
-<list>MySQL Workbench - ER Diagram, Data Modeling, Database management</list>
-<list>Jupyter Notebook - MySQL Python Connector, Writing both Python and SQL code to communicate with the MySQL server.</list>
-<list>Git - Log all documents and changes for the project</list>
+## What I learned in this project
+<details open> 
+  <Summary> Objectives </Summary>
+  
+  For this final project we were instructed to create various components required to create a booking system for a ficticious restaurant called Little Lemon. This project required the delivery of the following items:
+  
+    - Create a database that holds the data.
+    - Connect to the database using a Python client.
+    - Create a procedure using Python to react to changes in the data.
+    - Connect to the database using Tableau.
+    - Generate data reports using Tableau.
 
+  In completing the above requirements, I have demonstrated proficiency in the following:
+  
+  <details>
+  <summary>MySQL Workbench</summary>
+    
+      - ER Diagram
+      - Data Modeling
+      - Database management
+    
+  </details>
+  
+  <details>
+  <summary>Jupyter Notebook</summary>
+    
+      - Using MySQL Python Connector
+      - Writing both Python and SQL code to communicate with the MySQL server.
+      
+  </details>
+  
+  <details>
+  <summary>git</summary>
+    
+      - Log all documents and changes for the project
+      
+  </details>
+  
+  <details>
+  <summary>Tableau</summary>
+    
+      - Load and prepare source data for analysis
+      - Visualize dashboard components in worksheet format
+      - Create an interactive dashboard
+
+  </details>
+  
 </details>
-
-<details><Summary>Project Highlights</Summary>
-</details>
+  
+  ## <details><Summary>Project Highlights</Summary>
+  
+  </details>
