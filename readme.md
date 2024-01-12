@@ -88,8 +88,9 @@
   ![LittleLemon_ERDiagram](https://github.com/Zh3nwx/db-capstone-project/assets/137427645/902d157d-401d-4716-9fa1-480711305f4f)
 
  ### Batch uploading data from Little Lemon Dataset
- 
- After I had completed the database schema to match the dataset, I broke the dataset down into individual csv files that correlated with each of the tables in the schema. I have them linked below to a folder in this repository.
+ > I talked a little bit about this in my reflection on challenges, but I really did wish this course demonstrated what the best practice for uploading their dataset into the database would be.
+
+ After I had completed the database schema to match the dataset, I broke the dataset down into individual csv files that correlated with each of the tables in the schema. They are linked in the table below.
  
  _Please note: if you want to replicate this process, you must ensure that your schema reflects the same naming convention and schema setup._
  
