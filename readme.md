@@ -79,10 +79,47 @@
   </details>
 </details>
 
-<details>
- <summary> Project Details </summary>
+<details open>
+ <summary> Project Process </summary>
  
- ## Here are project components presented in a more digestable manner
+ ## This was my process
+ ### Developing an ER diagram
+ 
+  ![LittleLemon_ERDiagram](https://github.com/Zh3nwx/db-capstone-project/assets/137427645/902d157d-401d-4716-9fa1-480711305f4f)
 
+ ### Batch uploading data from Little Lemon Dataset
  
+ After I had completed the database schema to match the dataset, I broke the dataset down into individual csv files that correlated with each of the tables in the schema. I have them linked below to a folder in this repository.
+ 
+ _Please note: if you want to replicate this process, you must ensure that your schema reflects the same naming convention and schema setup._
+ 
+ | Folder | File Source | Description |
+ | --- | --- | --- |
+ | Data Files | (https://github.com/Zh3nwx/db-capstone-project/tree/main/Data) | This is where you will find the dataset broken up into CSV files by the table.|
+ | Data Operations | (https://github.com/Zh3nwx/db-capstone-project/tree/main/DataOperations) | There is a [pre-requisite](https://github.com/Zh3nwx/db-capstone-project/tree/main/DataOperations/Pre-requisite) step you need to take before you can batch upload content. Once completed, you can use the provided SQL code to upload all of the CSV files into your database. Double check to make sure all the naming conventions are aligned, otherwise you will run into an error. |
+
+ ### Validating data and Creating stored procedures
+
+ Once the data is uploaded into the server, I was able to validate it by querying it within MySQL Workbench.
+ 
+ ![Screenshot 2024-01-12 at 11 28 15 AM](https://github.com/Zh3nwx/db-capstone-project/assets/137427645/70f352e4-4065-488c-95e8-d1527efff2ef)
+
+ Next, I created all of the subsequent [stored procedures](https://github.com/Zh3nwx/db-capstone-project/tree/main/StoredProcedures) per project requirements.
+ 
+ <img width="1322" alt="Screenshot 2024-01-12 at 11 35 24 AM" src="https://github.com/Zh3nwx/db-capstone-project/assets/137427645/cc36a8e1-4191-4cee-b3cc-f63fa57bd5ee">
+
+### Building out a Python Interface using MySQL Python Connector via Jupyter Notebook
+ Once I tested all of the code, I then moved onto logging it in my [Jupyter Notebook file](https://github.com/Zh3nwx/db-capstone-project/blob/main/JupyterNotebook/LittleLemonDB.ipynb). 
+ 
+ **I took this opportunity to explore and troubleshoot the MySQL Python connector**
+ 1. I kept running into an issue where I would error "Unread results" when using cursor.many() function. This was resolved by using a buffered=True cursor object. Phew.
+ 2. I wanted to make the experience a bit more dynamic so I added in user-input prompts that would populate the variables for the stored procedures. This made testing the stored procedures more efficient and interesting. I also thought this was a step closer in understanding how this experience could take shape in life working environment. 
+![Screenshot 2024-01-12 at 11 50 19 AM](https://github.com/Zh3nwx/db-capstone-project/assets/137427645/8bf23d3e-3ec9-4506-a47c-fdbdfe25bd20)
+
+
+### Last but not least, I utilize Tableau to visualize the Little Lemon Dataset
+I have heard of Tableau but never used it, so this was a great opportunity to explore and use a new tool. I am most familiar with Google Looker, formerly Google Data Studios, but I did find the UI in Tableau to be way more streamlined. The building process was way easier to replicate once I built my first dashboard. You can find all of the [visualizations here](https://github.com/Zh3nwx/db-capstone-project/tree/main/Visualizations)
+
+![CustomerSalesDashboard](https://github.com/Zh3nwx/db-capstone-project/assets/137427645/ba177175-9d64-445e-8571-c7405116cba9)
+
 </details>
