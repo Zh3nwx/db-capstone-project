@@ -114,7 +114,8 @@
  
  **I took this opportunity to explore and troubleshoot the MySQL Python connector**
  1. I kept running into an issue where I would error "Unread results" when using cursor.many() function. This was resolved by using a buffered=True cursor object. Phew.
- 2. I wanted to make the experience a bit more dynamic so I added in user-input prompts that would populate the variables for the stored procedures. This made testing the stored procedures more efficient and interesting. I also thought this was a step closer in understanding how this experience could take shape in life working environment. 
+ 2. I wanted to make the experience a bit more dynamic so I added in user-input prompts that would populate the variables for the stored procedures. This made testing the stored procedures more efficient and I figured this is probably more feasible in a real-life application.
+ 
 ![Screenshot 2024-01-12 at 11 50 19 AM](https://github.com/Zh3nwx/db-capstone-project/assets/137427645/8bf23d3e-3ec9-4506-a47c-fdbdfe25bd20)
 
 
